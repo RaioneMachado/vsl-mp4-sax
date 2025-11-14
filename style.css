@@ -1405,3 +1405,47 @@ footer {
         padding: 0.3rem 1rem;
     }
 }
+/* ====== APROXIMAÇÃO DAS SEÇÕES HERO E BENEFÍCIOS ====== */
+.hero {
+    min-height: 80vh; /* Reduzido de 100vh */
+    padding-bottom: 2rem; /* Adicionado padding na base */
+}
+
+#beneficios {
+    padding-top: 2rem; /* Reduzido de 6rem */
+    padding-bottom: 4rem; /* Mantido para dar espaço abaixo */
+    margin-top: -2rem; /* Puxa a seção para cima */
+}
+
+/* Ajuste no container do hero para menos espaço */
+.hero-content {
+    padding-bottom: 1rem; /* Reduz o espaço interno */
+}
+
+/* Ajuste no título da seção benefícios */
+#beneficios .section-title {
+    margin-bottom: 2rem; /* Reduzido de 4rem */
+}
+
+/* Se necessário, ajuste global das seções */
+section {
+    padding: 4rem 2rem; /* Reduzido de 6rem 2rem */
+}
+
+/* Ajuste específico para mobile */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 70vh;
+        padding: 5rem 1rem 1rem; /* Reduzido padding */
+    }
+    
+    #beneficios {
+        padding-top: 1rem;
+        margin-top: -1rem;
+        padding-bottom: 3rem;
+    }
+    
+    section {
+        padding: 3rem 1rem;
+    }
+}

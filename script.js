@@ -281,33 +281,6 @@ function initExitIntent() {
     }
 }
 
-function showExitIntent() {
-    const modal = document.createElement('div');
-    modal.className = 'modal';
-    modal.style.display = 'block';
-    modal.innerHTML = `
-        <div class="modal-content" style="max-width: 500px; text-align: center;">
-            <button class="close-modal" onclick="this.parentElement.parentElement.remove()">
-                <i class="fas fa-times"></i>
-            </button>
-            <div style="margin-bottom: 2rem;">
-                <i class="fas fa-gift" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
-                <h3 style="margin-bottom: 1rem;">Espere! Temos uma oferta especial para você!</h3>
-                <p style="color: var(--text-gray); margin-bottom: 2rem;">
-                    Que tal ganhar <strong>10% de desconto adicional</strong>?
-                </p>
-                <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px; margin-bottom: 2rem;">
-                    <p style="font-size: 2rem; font-weight: bold; color: var(--accent-color);">R$ 78,30</p>
-                    <p style="color: var(--text-gray);">Use o código: <strong>SAIDA10</strong></p>
-                </div>
-                <button class="btn btn-secondary btn-large" onclick="openCheckout(); this.parentElement.parentElement.parentElement.remove();">
-                    Aproveitar Desconto
-                </button>
-            </div>
-        </div>
-    `;
-    document.body.appendChild(modal);
-}
 
 // ====== PARALLAX EFFECT ======
 function initParallax() {
