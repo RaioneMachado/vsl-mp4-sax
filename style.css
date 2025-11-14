@@ -1455,3 +1455,51 @@ section {
         padding: 3rem 1rem;
     }
 }
+/* ===== VIDEO RESPONSIVO 16:9 ===== */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* opcional, deixa o vídeo mais elegante */
+    margin: 2rem auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #0a0a0a;
+    border: 2px solid rgba(0, 212, 255, 0.25);
+    box-shadow: 0 10px 35px rgba(0, 212, 255, 0.18);
+    transition: 0.3s ease;
+}
+
+/* Mantém 16:9 perfeito */
+.video-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 */
+}
+
+/* iframe encaixa perfeitamente no espaço criado */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Hover Premium */
+.video-container:hover {
+    border-color: #56AAF4;
+    box-shadow: 0 15px 45px rgba(86, 170, 244, 0.35);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 480px) {
+    .video-container {
+        border-radius: 10px;
+    }
+
+    .video-container iframe {
+        border-radius: 10px;
+    }
+}
