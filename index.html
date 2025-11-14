@@ -12,8 +12,38 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+
+    <!-- META PIXEL (ADICIONADO) -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1178969987383927');  // Pixel 1
+    fbq('init', '1430390114852950');  // Pixel 2
+    fbq('track', 'PageView');
+    </script>
+    <!-- FIM META PIXEL -->
 </head>
+
 <body>
+
+    <!-- META PIXEL NOSCRIPT (ADICIONADO) -->
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1178969987383927&ev=PageView&noscript=1" />
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1430390114852950&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- FIM NOSCRIPT -->
+
+
     <!-- Background Effects -->
     <div class="animated-bg">
         <div class="light-orb"></div>
@@ -23,36 +53,67 @@
 
     <!-- Header -->
 
+
 <!-- Hero Section -->
 <section class="hero" id="hero">
+
+    <style>
+
+        .hero-button {
+            display: inline-block;
+            background: #56AAF4;
+            color: #fff;
+            padding: 16px 34px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 22px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .hero-button i {
+            margin-right: 10px;
+        }
+
+        .hero-button:hover {
+            background: #3a8ac4;
+            transform: scale(1.07);
+        }
+    </style>
+
     <div class="container">
         <div class="hero-content fade-in-up">
+
             <h1>
                 Tenha acesso agora mesmo a <strong>maior material de VÍDEO PARTITURAS</strong> para saxofone da internet!
             </h1>
 
-            
-<!-- Link do YouTube -->
-<div class="video-container">
-    <iframe 
-        width="100%" 
-        height="315" 
-        src="https://www.youtube.com/embed/qMOaQcg3RRU" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-    </iframe>
-</div>
-
+            <!-- Link do YouTube -->
+            <div class="video-container">
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/qMOaQcg3RRU" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
 
             <p>
                 <strong>
-                    Já possuímos um acervo com <span style="color: #56AAF4;">mais de <strong>200 temas!! </span> <br>
-                    <br></strong><span style="color: #56AAF4;">Nosso Material é exclusiva de vídeo partituras</span>, todo o material está organizado em pastas separadas com nome de cada música, assim você não perde horas e horas procurando o material
+                    Já possuímos um acervo com <span style="color: #56AAF4;">mais de <strong>200 temas!! </span> <br><br>
+                    <span style="color: #56AAF4;">Nosso Material é exclusiva de vídeo partituras</span>, todo o material está organizado em pastas separadas com nome de cada música, assim você não perde horas e horas procurando o material
                 </strong>!
             </p>
-            
+
+            <!-- Botão com ícone -->
+            <a href="#preco" class="hero-button">
+                <i class="fas fa-shopping-cart"></i> Quero garantir agora
+            </a>
+
         </div>
     </div>
 </section>
