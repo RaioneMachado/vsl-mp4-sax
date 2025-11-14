@@ -525,13 +525,17 @@ section {
 }
 
 .price {
-    font-size: 3rem;
+    font-size: 4rem; /* Aumentado de 3rem */
     font-weight: 800;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.2rem;
 }
 
 .price-card.featured .price {
@@ -542,8 +546,10 @@ section {
 }
 
 .price-cents {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reduzido de 1.5rem */
     font-weight: 600;
+    align-self: flex-start;
+    margin-top: 0.5rem;
 }
 
 .price-note {
