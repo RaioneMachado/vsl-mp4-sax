@@ -296,7 +296,7 @@ nav a:hover::after {
 
 .btn-primary:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.4);
+    box-shadow: 0 15px 40px rgba(27, 102, 25, 0.4);
 }
 
 .btn-secondary {
@@ -481,7 +481,7 @@ section {
 
 .price-card {
     background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(0, 212, 255, 0.3);
+    border: 2px solid rgba(18, 155, 52, 0.3);
     border-radius: 25px;
     padding: 3rem 2rem;
     text-align: center;
@@ -590,7 +590,7 @@ section {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     padding: 2.5rem;
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    border: 1px solid rgba(26, 167, 61, 0.2);
     transition: all 0.3s ease;
 }
 
@@ -642,7 +642,7 @@ section {
 
 .faq-item {
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    border: 1px solid rgba(27, 156, 34, 0.2);
     border-radius: 15px;
     margin-bottom: 1.5rem;
     overflow: hidden;
